@@ -1,16 +1,16 @@
-<h4>How to settle all debts?</h4>
+<h4>Comment équilibrer vos dépenses?</h4>
 
 {{#if anyTransfers}}
   <div class="panel panel-default">
     <div class="panel-body">
       {{#each transfers as |transfer|}}
         <li class="settlement-item">
-          <strong>{{transfer.sender.name}}</strong> owes <strong>{{transfer.recipient.name}}</strong>
+          <strong>{{transfer.sender.name}}</strong> doit à <strong>{{transfer.recipient.name}}</strong>
           <span class="text-nowrap">
             {{format-money transfer.amount symbol=transfer.currency.code format="%v %s"}}
           </span>
           <button class="btn btn-sm btn-success" {{action (action settleUp transfer)}}>
-            Settle Up!
+            Remboursé!
           </button>
         </li>
       {{/each}}
@@ -18,6 +18,6 @@
   </div>
 {{else}}
   <div class="alert alert-info" role="alert">
-    There is no need to settle anything.
+    Il n'y a pas besoin de configurer.
   </div>
 {{/if}}

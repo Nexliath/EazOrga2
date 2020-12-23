@@ -1,14 +1,14 @@
 {{#side-menu}}
   <header class="navbar navbar-default">
     <div class="navbar-header">
-      {{#side-menu-link-to "index" class="navbar-brand" title="SplittyPie Home Page"}}
+      {{#side-menu-link-to "index" class="navbar-brand" title="EazOrga Home Page"}}
         {{partial "shared/brand"}}
       {{/side-menu-link-to}}
     </div>
   </header>
   <div class="content">
     <ul class="nav">
-      <li class="header">Events</li>
+      <li class="header">Evènements</li>
       {{#each model.previousEvents as |event|}}
         <li>
           {{#side-menu-link-to "event" event.id}}
@@ -20,7 +20,7 @@
       <li>
         {{#side-menu-link-to "new"}}
           {{inline-svg "plus" class="icon"}}
-          New Event
+          Nouvel Evènement
         {{/side-menu-link-to}}
       </li>
       <li class="divider"></li>
@@ -33,7 +33,7 @@
       <li>
         <a href="https://cowbell-labs.com/" target="_blank" rel="noopener">
           {{inline-svg "cowbell" class="icon cowbell"}}
-          Cowbell Labs
+          Team Roquette
         </a>
       </li>
     </ul>

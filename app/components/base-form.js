@@ -11,10 +11,10 @@ export default Component.extend({
         const isSaving = get(this, "formObject.isSaving");
 
         if (isSaving) {
-            return "Saving...";
+            return "Enregistrement...";
         }
 
-        return isNew ? "Create" : "Save";
+        return isNew ? "Créer" : "Valider";
     }),
 
     actions: {

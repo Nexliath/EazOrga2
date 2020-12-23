@@ -7,7 +7,7 @@ export default Component.extend({
     placeholder: computed("index", function () {
         const index = get(this, "index");
 
-        return index === 0 ? "Your name" : "Your friend's name";
+        return index === 0 ? "Votre nom" : "Le nom de votre ami(e)";
     }),
 
     actions: {

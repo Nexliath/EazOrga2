@@ -2,15 +2,15 @@
   {{#if iconOnly}}
     {{inline-svg "user" class="icon"}}
   {{else}}
-    Viewing as {{selected.name}}
+    Vous êtes {{selected.name}}
     <span class="caret"></span>
   {{/if}}
 </button>
 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropDownUsers">
   {{#if iconOnly}}
-    <li class="dropdown-header">Viewing as {{selected.name}}</li>
+    <li class="dropdown-header">Vous êtes {{selected.name}}</li>
   {{/if}}
-  <li class="dropdown-header">Switch user to</li>
+  <li class="dropdown-header">Changer d'utilisateur</li>
   {{#each otherUsers as |user|}}
     <li>
       <a {{action (action onChange user)}} href="#">

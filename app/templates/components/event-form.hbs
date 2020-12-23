@@ -12,14 +12,14 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="form-group {{if event.formErrors.name.messages "has-error"}}">
-        <label class="control-label">Event Name</label>
+        <label class="control-label">Nom de l'événement</label>
         {{input value=event.name class="form-control event-name" placeholder="Example: Trip to Barcelona"}}
         <div class="help-block with-errors">
           {{event.formErrors.name.message}}
         </div>
       </div>
       <div class="form-group {{if event.formErrors.currency.message "has-error"}}">
-        <label class="control-label">Currency</label>
+        <label class="control-label">Monnaie</label>
         {{my-select
           selectClass="event-currency"
           options=currencies
@@ -35,14 +35,14 @@
       <div class="form-group">
         <label class="control-label">Participants</label>
         {{user-list users=event.users}}
-        <button type="button" class="btn btn-primary add-user" {{action "addUser"}}>Add Participant</button>
+        <button type="button" class="btn btn-primary add-user" {{action "addUser"}}>Ajouter des Participants</button>
       </div>
 
       {{#unless event.isNew}}
         <div class="form-group">
-          <label class="control-label">Other options:</label>
+          <label class="control-label">Autre options:</label>
           <div class="input-group">
-            <button {{action "delete"}} class="btn btn-danger delete-event">Delete Event</button>
+            <button {{action "delete"}} class="btn btn-danger delete-event">Supprimer l'évenement</button>
             {{#if event.isOffline}}
               &nbsp;
               <button {{action "syncOnline"}} class="btn btn-success sync-online">Sync Online</button>
@@ -59,7 +59,7 @@
     </button>
     or
     {{#back-button}}
-      Cancel
+      Annuler
     {{/back-button}}
   </div>
 </form>

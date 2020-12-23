@@ -7,20 +7,20 @@
 
 {{#ember-wormhole to="navbar-right"}}
   <ul class="nav navbar-nav navbar-right">
-    {{scroll-to href="#about" label="About"}}
+    {{scroll-to href="#about" label="A propos"}}
     {{#if (any model.previousEvents)}}
-      {{scroll-to href="#events" label="Events"}}
+      {{scroll-to href="#events" label="Evénements"}}
     {{/if}}
-    {{scroll-to href="#features" label="Features"}}
+    {{scroll-to href="#features" label="Fonctionnalités"}}
     <li>
-      <a href="https://github.com/cowbell/splittypie" target="_blank" rel="noopener" title="SplittyPie Source Code">
+      <a href="https://github.com/Nexliath/EazOrga2" target="_blank" rel="noopener" title="SplittyPie Source Code">
         {{inline-svg "github" class="icon"}}
         Source
       </a>
     </li>
-    {{#nav-link-to "new" title="Create New Event"}}
+    {{#nav-link-to "new" title="Créer un nouvel événement"}}
       {{inline-svg "plus" class="icon"}}
-      New Event
+      Nouvel événement
     {{/nav-link-to}}
   </ul>
 {{/ember-wormhole}}
@@ -29,10 +29,10 @@
   <section id="about">
     <div class="row main">
       <div class="col-sm-7 main-promotion-text">
-        <h1>Easy expense splitting</h1>
+        <h1>Une meilleure organisation de vos événements</h1>
         <p>
-          Create event, add users and their expenses. Splittypie will calculate who owes who and how much exactly.
-          It's <strong>Free</strong> and with <strong class="text-nowrap">No Sign Up</strong>.
+          Créez un événement, ajoutez des utilisateurs et leurs dépenses. EazOrga calculera qui doit à qui et combien exactement.
+          C'est <strong>Gratuit</strong> et sans <strong class="text-nowrap">Inscription</strong>.
         </p>
         <p>{{link-to "Create New Event" "new" class="btn btn-lg btn-success"}}</p>
       </div>
@@ -47,40 +47,38 @@
   {{/if}}
 
   <section id="features">
-    <h3 class="text-center">Find more about Splittypie</h3>
+    <h3 class="text-center">En découvrir plus sur EazOrga</h3>
 
     <div class="row">
       <div class="col-md-4 text-center">
         <div class="feature-img-container">
           <img src="/assets/responsive.jpg" alt="Works anywhere. Responsive">
         </div>
-        <h4>Works anywhere</h4>
+        <h4>Un système de chat en direct</h4>
         <p>
-          Accessible on any device with modern web browser.
-          It has look and feel of mobile device application
-          thanks to resposive design.
+          Ou que vous soyez, quand vous voulez.
+          Retrouvez vos amis sur notre chat et mettez vous d'accord sur l'organisation de votre événement!
         </p>
       </div>
       <div class="col-md-4 text-center">
         <div class="feature-img-container">
           <img src="/assets/stopwatch.png" alt="Fast and realtime">
         </div>
-        <h4>Fast and realtime</h4>
+        <h4>Un calcul des dépenses</h4>
         <p>
-          It's really fast and dynamic.
-          What's more, your friends will see all your changes
-          in realtime without refreshing page!
+          C'est vraiment rapide et dynamique.
+          De plus, vos amis verront toutes vos modifications
+          en temps réel sans rafraîchir la page!
         </p>
       </div>
       <div class="col-md-4 text-center">
         <div class="feature-img-container">
           <img src="/assets/offline.png" alt="Offline Enabled">
         </div>
-        <h4>Offline Enabled</h4>
+        <h4>Un album partagé</h4>
         <p>
-          SplittyPie is an offline-first application.
-          It works when there is no Internet connection
-          and syncs seamlessly where there is.
+          Avec EazOrga, retrouvez facilement vos photo de soirée,
+          événement et autre, centralisé au même endroit!
         </p>
       </div>
     </div>
@@ -89,19 +87,20 @@
         <div class="feature-img-container">
           <img src="/assets/free.png" alt="Free of charge">
         </div>
-        <h4>Free to use</h4>
+        <h4>Des jeux intégrés</h4>
         <p>
-          It's completely free of charge.
-          No Sign In, No Registration, No Commitments.
+          Plusieurs jeux sont proposés,
+          Post-it, Times up et bientôt plus !
         </p>
       </div>
       <div class="col-md-4 text-center">
         <div class="feature-img-container">
           <img src="/assets/share.png" alt="Easy to share">
         </div>
-        <h4>Easy to share</h4>
+        <h4>Un site gratuit</h4>
         <p>
-          To share just pass a link to a friend, that's it.
+          Pas besoin d'inscription,
+          Pas besoin de payer, c'est gratuit
         </p>
       </div>
       <div class="col-md-4 text-center">
@@ -110,7 +109,7 @@
         </div>
         <h4>Open Source</h4>
         <p>
-          Yes, it's open source. Check out the code on <a href="https://github.com/cowbell/splittypie" target="_blank" rel="noopener" title="SplittyPie Source Code">github</a>.
+          Oui, c'est open source. Retrouvez notre code ici <a href="https://github.com/Nexliath/EazOrga2" target="_blank" rel="noopener" title="SplittyPie Source Code">github</a>.
         </p>
       </div>
     </div>
@@ -119,7 +118,7 @@
   <div class="small-border"></div>
 
   <section class="social-list">
-    <a href="https://github.com/cowbell/splittypie" target="_blank" rel="noopener" title="SplittyPie Source Code">
+    <a href="https://github.com/Nexliath/EazOrga2" target="_blank" rel="noopener" title="SplittyPie Source Code">
       {{inline-svg "github" class="icon icon-md"}}
     </a>
     <a href="https://cowbell-labs.com" target="_blank" rel="noopener" title="Author Cowbell-Labs Page">

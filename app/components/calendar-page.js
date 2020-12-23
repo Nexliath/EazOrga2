@@ -14,7 +14,7 @@ export default Component.extend({
     month: computed("date", function () {
         const date = get(this, "date");
         const months = [
-            "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+            "Jan", "Fev", "Mar", "Avr", "Mai", "Jun", "Jui", "Aou", "Sep", "Oct", "Nov", "Dec",
         ];
 
         return months[new Date(date).getUTCMonth()];
